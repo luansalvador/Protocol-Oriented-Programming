@@ -16,7 +16,18 @@
 		0FC5769729622CEB00B6E0A9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5769629622CEB00B6E0A9 /* UserModel.swift */; };
 		0FC576992962300000B6E0A9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC576982962300000B6E0A9 /* UserViewModel.swift */; };
 		0FC5769B2962324600B6E0A9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5769A2962324600B6E0A9 /* APIManager.swift */; };
+		0FC576A3296306B800B6E0A9 /* Protocol_Oriented_ProgrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC576A2296306B800B6E0A9 /* Protocol_Oriented_ProgrammingTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FC576A4296306B800B6E0A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FC576732962265300B6E0A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FC5767A2962265300B6E0A9;
+			remoteInfo = "Protocol-Oriented-Programming";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0FC5767B2962265300B6E0A9 /* Protocol-Oriented-Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Protocol-Oriented-Programming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,19 @@
 		0FC5769629622CEB00B6E0A9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0FC576982962300000B6E0A9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0FC5769A2962324600B6E0A9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0FC576A0296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Protocol-Oriented-ProgrammingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC576A2296306B800B6E0A9 /* Protocol_Oriented_ProgrammingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_Oriented_ProgrammingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0FC576782962265300B6E0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FC5769D296306B800B6E0A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC5767D2962265300B6E0A9 /* Protocol-Oriented-Programming */,
+				0FC576A1296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests */,
 				0FC5767C2962265300B6E0A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC5767B2962265300B6E0A9 /* Protocol-Oriented-Programming.app */,
+				0FC576A0296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +114,14 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		0FC576A1296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FC576A2296306B800B6E0A9 /* Protocol_Oriented_ProgrammingTests.swift */,
+			);
+			path = "Protocol-Oriented-ProgrammingTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +142,24 @@
 			productReference = 0FC5767B2962265300B6E0A9 /* Protocol-Oriented-Programming.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0FC5769F296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FC576A6296306B800B6E0A9 /* Build configuration list for PBXNativeTarget "Protocol-Oriented-ProgrammingTests" */;
+			buildPhases = (
+				0FC5769C296306B800B6E0A9 /* Sources */,
+				0FC5769D296306B800B6E0A9 /* Frameworks */,
+				0FC5769E296306B800B6E0A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FC576A5296306B800B6E0A9 /* PBXTargetDependency */,
+			);
+			name = "Protocol-Oriented-ProgrammingTests";
+			productName = "Protocol-Oriented-ProgrammingTests";
+			productReference = 0FC576A0296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +172,10 @@
 				TargetAttributes = {
 					0FC5767A2962265300B6E0A9 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					0FC5769F296306B800B6E0A9 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 0FC5767A2962265300B6E0A9;
 					};
 				};
 			};
@@ -141,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				0FC5767A2962265300B6E0A9 /* Protocol-Oriented-Programming */,
+				0FC5769F296306B800B6E0A9 /* Protocol-Oriented-ProgrammingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +205,13 @@
 			files = (
 				0FC5768B2962265500B6E0A9 /* LaunchScreen.storyboard in Resources */,
 				0FC576882962265500B6E0A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FC5769E296306B800B6E0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +232,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FC5769C296306B800B6E0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC576A3296306B800B6E0A9 /* Protocol_Oriented_ProgrammingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FC576A5296306B800B6E0A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FC5767A2962265300B6E0A9 /* Protocol-Oriented-Programming */;
+			targetProxy = 0FC576A4296306B800B6E0A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FC576892962265500B6E0A9 /* LaunchScreen.storyboard */ = {
@@ -356,6 +432,42 @@
 			};
 			name = Release;
 		};
+		0FC576A7296306B800B6E0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXRS3CF57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.practicing.Protocol-Oriented-ProgrammingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Protocol-Oriented-Programming.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Protocol-Oriented-Programming";
+			};
+			name = Debug;
+		};
+		0FC576A8296306B800B6E0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXRS3CF57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.practicing.Protocol-Oriented-ProgrammingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Protocol-Oriented-Programming.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Protocol-Oriented-Programming";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +485,15 @@
 			buildConfigurations = (
 				0FC576902962265500B6E0A9 /* Debug */,
 				0FC576912962265500B6E0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FC576A6296306B800B6E0A9 /* Build configuration list for PBXNativeTarget "Protocol-Oriented-ProgrammingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC576A7296306B800B6E0A9 /* Debug */,
+				0FC576A8296306B800B6E0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

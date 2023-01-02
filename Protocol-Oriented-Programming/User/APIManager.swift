@@ -15,7 +15,7 @@ class APIManager: UserService {
     
     func fetchUser(completion: @escaping (Result<User, Error>) -> Void) {
         
-        guard let url = URL(string: "https://reqres.in/api/users/3") else { return }
+        guard let url = URL(string: "https://reqres.in/api/users/4") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
